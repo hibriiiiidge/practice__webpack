@@ -1,4 +1,5 @@
 require('./style.css')
+require('./style.scss')
 
 const _ = require('lodash');
 const logo = require('./logo.png')
