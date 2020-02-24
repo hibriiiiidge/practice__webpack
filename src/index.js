@@ -1,7 +1,6 @@
-const _ = require('lodash');
-const style = require('./style.css')
+require('./style.css')
 
-console.log(style.toString());
+const _ = require('lodash');
 
 function component() {
   const element = document.createElement('div');
@@ -11,3 +10,4 @@ function component() {
 }
 
 document.body.appendChild(component());
+document.body.classList.add('haikei');

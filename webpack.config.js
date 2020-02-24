@@ -13,7 +13,11 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ['css-loader']
+        use: [
+          //  記載の逆順で実行される css => style
+          'style-loader',
+          'css-loader'
+        ]
       }
     ]
   },
