@@ -1,6 +1,7 @@
 require('./style.css')
 
 const _ = require('lodash');
+const logo = require('./logo.png')
 
 function component() {
   const element = document.createElement('div');
@@ -11,3 +12,7 @@ function component() {
 
 document.body.appendChild(component());
 document.body.classList.add('haikei');
+
+const image = new Image();
+image.src = logo
+document.body.appendChild(image);
