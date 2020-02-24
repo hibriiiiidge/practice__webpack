@@ -1,7 +1,7 @@
 const _ = require('lodash');
-const utilities = require('./utilities');
+const style = require('./style.css')
 
-console.log(utilities.NAME);
+console.log(style.toString());
 
 function component() {
   const element = document.createElement('div');
